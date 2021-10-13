@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddData">
+
+
+    <EditText
+        android:textColor="#050505"
+        android:textColorHint="@color/black"
+        android:id="@+id/authorname"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/backgroundgg"
+        android:ems="10"
+        android:hint="Book Author"
+        android:inputType="textPersonName"
+        android:paddingStart="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/bookname"
+        app:layout_constraintStart_toStartOf="@+id/bookname"
+        app:layout_constraintTop_toBottomOf="@+id/bookname" />
+
+    <EditText
+        android:textColor="#050505"
+        android:textColorHint="@color/black"
+        android:id="@+id/noofpages"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/backgroundgg"
+        android:ems="10"
+        android:hint="Total no of Pages"
+        android:inputType="textPersonName"
+        android:paddingStart="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/authorname"
+        app:layout_constraintStart_toStartOf="@+id/authorname"
+        app:layout_constraintTop_toBottomOf="@+id/authorname" />
+
+    <Button
+
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttonbackground"
+        android:text="add"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/noofpages"
+        app:layout_constraintStart_toStartOf="@+id/noofpages"
+        app:layout_constraintTop_toBottomOf="@+id/noofpages"
+        app:layout_constraintVertical_bias="0.00999999" />
+
+    <EditText
+        android:textColor="#050505"
+        android:textColorHint="@color/black"
+        android:paddingStart="5dp"
+        android:background="@drawable/backgroundgg"
+        android:id="@+id/bookname"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Book Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/authorname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
